@@ -56,23 +56,23 @@ export function FortunePaper({ fortune, isVisible, onShare, onSave }: FortunePap
       </p>
       <div className="mt-4 flex justify-center space-x-2">
         <Button 
-          variant="outline" 
-          size="sm" 
-          className="flex items-center text-sm rounded-full"
-          onClick={onShare}
-        >
-          <Share className="mr-1 h-3.5 w-3.5" />
-          Share
-        </Button>
-        <Button 
-          variant="outline" 
-          size="sm" 
-          className="flex items-center text-sm rounded-full"
-          onClick={onSave}
-        >
-          <Save className="mr-1 h-3.5 w-3.5" />
-          Save
-        </Button>
+            variant="outline" 
+            size="sm" 
+            className="flex items-center text-sm rounded-full bg-white border-[#D35400]/30 text-[#D35400] hover:bg-[#D35400]/10 px-4"
+            onClick={onShare}
+          >
+            <Share className="mr-2 h-3.5 w-3.5" />
+            Share
+          </Button>
+          <Button 
+            variant="outline" 
+            size="sm" 
+            className="flex items-center text-sm rounded-full bg-white border-[#D35400]/30 text-[#D35400] hover:bg-[#D35400]/10 px-4"
+            onClick={onSave}
+          >
+            <Save className="mr-2 h-3.5 w-3.5" />
+            Save
+          </Button>
       </div>
     </motion.div>
   );
